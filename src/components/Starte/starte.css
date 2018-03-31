@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body,html,.Wrap,.section,#root{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.starteNav{
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+.starteNav >li.starteactive{
+    border-bottom: 1px solid red;
+}
+
+.section{
+    position: absolute;
+    left:0;
+    top: 51px;
+    height: calc(100% - 112px);
+    bottom: 51px;
+}
+
+.sectionLeft{
+    width: 100px;
+    float: left;
+    text-align: center;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-right: 1px solid #ccc;
+}
+
+.sectionLeft >a{
+    width: 100px;
+    display: block;
+    line-height: 50px;
+    color: #000;
+    margin:  0 auto;
+}
+
+.sectionRight{
+    width: calc(100% - 101px);
+    float: left;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.foods{
+    display: flex;
+}
+
+.foods >dt{
+    width:100px;
+    height: 90px;
+}
+
+.foods >dd{
+    width: calc(100% - 100px);
+}
+
+.foods >dd h5{
+    padding: 10px 0 20px 5px;
+}
+
+.foods >dd >.shops{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addR >span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: rgb(19, 38, 202);
+    color: #fff;
+    display: inline-block;
+}
+
+.footer{
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 30px;
+    z-index: 10;
+}
+
+.footer button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    background: #f60;
+}
+
+.footer i {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.shopcar{
+    position: absolute;
+    left: 0;
+    top: 51px;
+    bottom: 50px;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    height: calc(100% - 102px);
+    transform: translateY(120%);
+    z-index: 1;
+}
+
+.cars{
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: 300px;
+    overflow-y: scroll;
+    transform: translateY(120%);
+    transition: all .3s;
+    z-index: 1;
+}
+
+.tran0{
+    transform: translateY(0%);
+}
+
+.carsLine{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.carsRight{
+    display: flex;
+}
+
+.carsRight >span{
+    padding-right: 10px;
+}
